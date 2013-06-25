@@ -1,0 +1,24 @@
+﻿@model karamuzi.Models.NewUserModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Create New User.</legend>
+        
+        <ol>
+            <li>
+                @*@Html.LabelFor(m => m.Username)*@
+                @Html.TextBoxFor(m => m.Username)
+            </li>
+            <li>@Html.TextBoxFor(m => m.Password)</li>
+            <li>@Html.TextBoxFor(m => m.ConfirmPassword)</li>
+        </ol>
+        <button type="submit">Submit</button>
+    </fieldset>
+}

@@ -9,6 +9,8 @@ namespace karamuzi
 {
     public class Crypt
     {
+        // Man Shiva padeshahe sarzamine pars be shoma salam mikonam!
+
         public static string Hash(string password)
         {
             byte[] buffer;
